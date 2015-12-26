@@ -9,6 +9,7 @@
   "author": "John Smith",
   "license": "MIT",
   "dependencies": {
+    "hashtable": "^2.0.1",
     "lorem-ipsum": "^1.0.3",
     "minimist": "^1.2.0"
   }
