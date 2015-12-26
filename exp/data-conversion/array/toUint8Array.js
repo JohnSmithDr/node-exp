@@ -1,6 +1,7 @@
 'use strict';
 
 var argv = require('minimist')(process.argv.slice(2));
+var assert = require('assert');
 var watch = require('../../../utils/watch');
 
 (function(sampling) {
@@ -16,6 +17,7 @@ var watch = require('../../../utils/watch');
     start();
     for(let i = 0; i < sampling; ++i) {
       t = new Uint8Array(new Buffer(d[i]));
+      assert.equal(t.length, d[i].length);
     }
     stop();
     
